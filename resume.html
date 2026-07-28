@@ -37,9 +37,24 @@
     </p>
     <a class="button" href="assets/resume.pdf" download>Download PDF</a>
 
+    <div class="stat-grid">
+      <div class="stat-card reveal">
+        <h3 data-value="12" data-suffix="+">12+</h3>
+        <p>Years of Experience</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3 data-value="2">2</h3>
+        <p>Positions Held</p>
+      </div>
+      <div class="stat-card reveal">
+        <h3 data-value="2">2</h3>
+        <p>Total Employers</p>
+      </div>
+    </div>
+
     <h2>Experience</h2>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-role">Senior Business Intelligence Engineer — Blink Health</div>
       <div class="timeline-meta">Remote · Oct 2021 – Present</div>
       <ul>
@@ -59,7 +74,7 @@
       </ul>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-role">Business Intelligence Engineer — Sky IT Group</div>
       <div class="timeline-meta">New York, NY · Mar 2016 – Oct 2021</div>
       <ul>
@@ -99,11 +114,11 @@
     </ul>
 
     <h2>Education</h2>
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-role">MS, Information Technology and Management — The University of Texas at Dallas</div>
       <div class="timeline-meta">Dallas, TX · Aug 2013 – May 2015</div>
     </div>
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-role">BE, Information Technology — Don Bosco Institute of Technology</div>
       <div class="timeline-meta">Mumbai, India · Aug 2006 – Sep 2010</div>
     </div>
@@ -112,6 +127,10 @@
   <footer class="site-footer">
     &copy; <span id="year"></span> Srikant Neelakantan. Built with plain HTML/CSS/JS.
   </footer>
+
+  <button class="scroll-top-btn" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
