@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interests — Srikant Neelakantan</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Srikant Neelakantan</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Beyond work</p>
+    <h1>Interests &amp; Hobbies</h1>
+    <p class="lede">[Placeholder] A bit about who I am outside of data. Swap these out for your real interests.</p>
+
+    <div class="grid" style="margin-top: 2rem;">
+      <div class="card">
+        <strong>[Hobby / Interest]</strong>
+        <p>[Placeholder] A sentence or two about this interest.</p>
+      </div>
+      <div class="card">
+        <strong>[Hobby / Interest]</strong>
+        <p>[Placeholder] A sentence or two about this interest.</p>
+      </div>
+      <div class="card">
+        <strong>[Hobby / Interest]</strong>
+        <p>[Placeholder] A sentence or two about this interest.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Srikant Neelakantan. Built with plain HTML/CSS/JS.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

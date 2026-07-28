@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Srikant Neelakantan</title>
+  <meta name="description" content="Portfolio of Srikant Neelakantan — Data and Analytics professional specializing in dbt, Airflow, and financial data modeling." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Srikant Neelakantan</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Hi, I'm</p>
+    <h1>Srikant Neelakantan</h1>
+    <p class="lede">
+      Data and Analytics professional with 12+ years building and owning end-to-end analytics infrastructure
+      across healthcare and SaaS. Deep expertise in dbt, Airflow orchestration, Metaplane observability, and
+      financial data modeling — trusted by Finance, Operations, Product, and Engineering to resolve complex
+      data problems end-to-end.
+    </p>
+    <a class="button" href="resume.html">View my resume</a>
+    <a class="button secondary" href="projects.html">See my projects</a>
+
+    <h2>What I do</h2>
+    <div class="grid">
+      <div class="card">
+        <strong>Data Engineering</strong>
+        <p>dbt, Airflow, and Databricks pipelines — dimensional modeling, medallion architecture, and CI/CD for data.</p>
+      </div>
+      <div class="card">
+        <strong>Observability &amp; Governance</strong>
+        <p>Metaplane monitoring, data contracts, SLA analytics, and audit compliance for high-stakes financial data.</p>
+      </div>
+      <div class="card">
+        <strong>AI-Assisted Development</strong>
+        <p>Using Claude, Cursor AI, and Databricks MCP for root-cause analysis, pipeline debugging, and validation automation.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Srikant Neelakantan. Built with plain HTML/CSS/JS.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

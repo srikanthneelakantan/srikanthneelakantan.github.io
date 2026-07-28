@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Srikant Neelakantan</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="nav-brand" href="index.html">Srikant Neelakantan</a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="interests.html">Interests</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="eyebrow">Resume</p>
+    <h1>Experience &amp; Background</h1>
+    <p class="lede">
+      Data and Analytics professional with 12+ years building and owning end-to-end analytics infrastructure across
+      healthcare and SaaS. Deep expertise in dbt, Airflow orchestration, Metaplane observability, and financial data
+      modeling. Trusted by Finance, Operations, Product, and Engineering to resolve complex data problems
+      end-to-end. Active practitioner of AI-assisted development (Claude, Cursor AI, Databricks MCP) applied for
+      root-cause analysis, pipeline debugging, and validation automation.
+    </p>
+    <a class="button" href="assets/resume.pdf" download>Download PDF</a>
+
+    <h2>Experience</h2>
+
+    <div class="timeline-item">
+      <div class="timeline-role">Senior Business Intelligence Engineer — Blink Health</div>
+      <div class="timeline-meta">Remote · Oct 2021 – Present</div>
+      <ul>
+        <li>Architected the data foundation that resolved a $1.56M vendor payment discrepancy — standardizing source data, correcting business logic, and ensuring invoice-to-payment accuracy.</li>
+        <li>Eliminated a 4.5% variance between customer payment data and reported revenue by owning end-to-end traceability and building a scalable data pipeline, strengthening audit compliance.</li>
+        <li>Designed a unified data model supporting 200K+ monthly transactions, delivering end-to-end operational visibility across Finance, Product, and Pharmacy Operations.</li>
+        <li>Drove a 30% operational efficiency gain by identifying queue management and task-allocation bottlenecks, then delivering data-driven dashboards for Pharmacy Operations.</li>
+        <li>Led the implementation of a centralized financial data platform, eliminating manual dependencies and accelerating reporting from bi-monthly to daily.</li>
+        <li>Deployed Claude and Cursor as investigation copilots to trace data lineage, identify pipeline breakpoints, and materially cut manual debugging cycles.</li>
+        <li>Leveraged Databricks MCP for AI-driven querying of large-scale datasets, accelerating deep-dive analysis and real-time failure isolation.</li>
+        <li>Built an AI-assisted identifier resolution layer using lookup-based logic, unifying fragmented entity mappings and maintaining downstream accuracy with incomplete source data.</li>
+        <li>Embedded AI-assisted tooling into BI validation workflows, raising team throughput and establishing a higher quality baseline across data pipelines.</li>
+        <li>Built and tested dbt models alongside data dictionaries and transformation logic documentation, improving data reliability and trust across downstream reporting.</li>
+        <li>Modeled and maintained semantic layers using dbt, establishing consistent metric definitions and fostering alignment across cross-functional teams.</li>
+        <li>Set up proactive data pipeline monitoring through Metaplane, triggering alerts for potential SLA breaches and enabling timely intervention to maintain data availability.</li>
+        <li>Onboarded new data analysts with intensive training on data governance policies and data quality standards, accelerating integration into project teams.</li>
+      </ul>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-role">Business Intelligence Engineer — Sky IT Group</div>
+      <div class="timeline-meta">New York, NY · Mar 2016 – Oct 2021</div>
+      <ul>
+        <li>Drove a 70% improvement in data delivery performance by redesigning and optimizing ETL pipelines across client environments.</li>
+        <li>Cut manual data-validation effort by 40% by automating repetitive quality checks in ETL pipelines, freeing 5+ engineering hours/week for higher-value work.</li>
+        <li>Accelerated dashboard development by 50% by building reusable BI frameworks and standardized reporting components, enabling faster delivery across analytics teams.</li>
+        <li>Saved 100% of incremental licensing cost by proposing and implementing an in-house On-Demand Reporting environment using QlikView and Python, eliminating third-party dependency.</li>
+        <li>Facilitated training sessions on standardized reporting components, resulting in increased adoption of consistent metrics and improved data accuracy across analytics teams.</li>
+      </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <ul class="tag-list">
+      <li>dbt</li>
+      <li>SQL (Advanced)</li>
+      <li>Databricks</li>
+      <li>ETL/ELT Pipeline Design</li>
+      <li>Dimensional Modeling</li>
+      <li>Apache Airflow</li>
+      <li>Python</li>
+      <li>CI/CD for Data Pipelines</li>
+      <li>Data Lineage</li>
+      <li>Star Schema</li>
+      <li>Medallion Architecture</li>
+      <li>Metaplane</li>
+      <li>Data Contracts</li>
+      <li>SLA Analytics</li>
+      <li>Audit Compliance</li>
+      <li>Data Governance</li>
+      <li>Claude</li>
+      <li>Cursor AI</li>
+      <li>Databricks MCP</li>
+      <li>Looker</li>
+      <li>Tableau</li>
+      <li>QlikView</li>
+      <li>OLAP</li>
+    </ul>
+
+    <h2>Education</h2>
+    <div class="timeline-item">
+      <div class="timeline-role">MS, Information Technology and Management — The University of Texas at Dallas</div>
+      <div class="timeline-meta">Dallas, TX · Aug 2013 – May 2015</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-role">BE, Information Technology — Don Bosco Institute of Technology</div>
+      <div class="timeline-meta">Mumbai, India · Aug 2006 – Sep 2010</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    &copy; <span id="year"></span> Srikant Neelakantan. Built with plain HTML/CSS/JS.
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
