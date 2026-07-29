@@ -312,6 +312,11 @@ h2::before {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  align-items: stretch;
+}
+
+.grid .card + .card {
+  margin-top: 0;
 }
 
 .icon-badge {
