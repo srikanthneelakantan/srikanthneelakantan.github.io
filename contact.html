@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — Srikant Neelakantan</title>
+  <title>Email Me — Srikant Neelakantan</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="site-header">
     <nav class="nav">
-      <a class="nav-brand" href="index.html">Srikant Neelakantan</a>
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span class="nav-toggle-bar"></span>
         <span class="nav-toggle-bar"></span>
@@ -20,38 +19,42 @@
         <li><a href="resume.html">Resume</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="interests.html">Interests</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-contact">
+        <span class="nav-contact-label">Contact:</span>
+        <a class="nav-icon" href="contact.html" aria-label="Email me" title="Email me">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </a>
+        <a class="nav-icon" href="https://linkedin.com/in/srikanthneelakantan" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a1.5 1.5 0 0 1 3 0V17M14 12.5a1.5 1.5 0 0 1 3 0V17"/></svg>
+        </a>
+        <a class="nav-icon" href="https://github.com/srikanthneelakantan" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+        </a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section class="hero">
       <p class="eyebrow">Get in touch</p>
-      <h1>Contact</h1>
-      <p class="lede">Based in Newark, CA. I'm always open to conversations about data engineering, analytics, or new opportunities. Feel free to reach out.</p>
+      <h1>Email Me</h1>
+      <p class="lede">Have a question or an opportunity to discuss? Fill in the subject and message below and hit send — it goes straight to my inbox.</p>
     </section>
 
-    <ul class="contact-list">
-      <li class="reveal">
-        <a href="mailto:srikanthneelakantan@gmail.com">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-          srikanthneelakantan@gmail.com
-        </a>
-      </li>
-      <li class="reveal">
-        <a href="https://linkedin.com/in/srikanthneelakantan" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M11 17v-4.5a1.5 1.5 0 0 1 3 0V17M14 12.5a1.5 1.5 0 0 1 3 0V17"/></svg>
-          linkedin.com/in/srikanthneelakantan
-        </a>
-      </li>
-      <li class="reveal">
-        <a href="https://github.com/srikanthneelakantan" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.7 2.8 5.6 3.1 5.6 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4.2 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
-          github.com/srikanthneelakantan
-        </a>
-      </li>
-    </ul>
+    <!-- TODO: replace YOUR_FORM_ID below with your real Formspree endpoint (create a free form at https://formspree.io) -->
+    <form class="email-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write your message..." required></textarea>
+      </div>
+      <button type="submit" class="button">Send Message</button>
+      <p class="form-note">This form isn't wired up to a live endpoint yet — see the TODO comment in contact.html.</p>
+    </form>
   </main>
 
   <footer class="site-footer">
